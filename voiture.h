@@ -2,12 +2,13 @@
 #define VOITURE_H
 
 #include <string>
+using std::string;
 
 class CVoiture {
 private:
     std::string carburant;
-    string marque; 
-    string modele;
+    std::string marque;
+    std::string modele;
     int puissance;
     int vitesse;
     double posX;
@@ -15,7 +16,7 @@ private:
     double kilometrageTotal;
 
 public:
-    CVoiture(string marque, string modele, int puissance, string carburant);
+    CVoiture(std::string marque, std::string modele, int puissance, std::string carburant);
 
     void accelerer(int);
     void affiche();
@@ -23,6 +24,7 @@ public:
     void demarrer();
     void ralentir(int);
     void deplacer(double deltaX, double deltaY);
+    void afficherPosition();
 
     // Getters
     double getPosX() const;

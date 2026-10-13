@@ -47,6 +47,7 @@ void CVoiture::ralentir(int valeur) {
     if (vitesse < 0) {
         vitesse = 0; // La vitesse ne peut pas être négative
     }
+}
 
 void CVoiture::deplacer(double deltaX, double deltaY) {
     posX += deltaX;

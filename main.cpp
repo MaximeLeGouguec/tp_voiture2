@@ -4,6 +4,7 @@
 using namespace std;
 
 int main() {
+    /*
     // Création d'une instance de CVoiture
     CVoiture voiture("Peugeot", "208", 100, "Essence");
 
@@ -35,6 +36,33 @@ int main() {
     
     // Afficher les informations finales de la voiture
     voiture.affiche();
+
+    return 0;
+    */
+
+    // Création de deux voitures
+    CVoiture voiture1();
+    CVoiture voiture2();
+
+    // Déplacer la première voiture
+    voiture1.deplacer(10.0, 5.0);
+    voiture1.deplacer(-3.0, 2.0);
+
+    voiture1.afficherPosition();
+
+    cout << endl;
+
+    // Déplacer la deuxième voiture
+    voiture2.deplacer(7.0, -4.0);
+    voiture2.deplacer(2.0, 3.0);
+
+    voiture2.afficherPosition();
+
+    cout << endl;
+
+    // Affichage des kilométrages
+    cout << "Kilométrage total de la voiture 1: " << voiture1.getKilometrageTotal() << " km" << endl;
+    cout << "Kilométrage total de la voiture 2: " << voiture2.getKilometrageTotal() << " km" << endl;
 
     return 0;
 }
